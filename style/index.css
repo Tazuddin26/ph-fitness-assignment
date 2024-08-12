@@ -1,0 +1,784 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Monsieur+La+Doulaise&family=MonteCarlo&family=Parisienne&display=swap");
+
+.montecarlo-regular {
+  font-family: "MonteCarlo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Common Style Options */
+.display-flex {
+  display: flex;
+}
+
+/* Header style */
+#body {
+  background-color: rgb(9, 9, 9);
+}
+.header {
+  background-image: linear-gradient(
+    180deg,
+    rgb(9, 9, 9),
+    rgba(48, 48, 48, 0.88),
+    rgb(9, 9, 9)
+  );
+}
+.navbar {
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-top: 40px;
+}
+.menu {
+  width: 80%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+#icon {
+  color: crimson;
+  font-family: Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.text-link {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: aliceblue;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  gap: 20px;
+  cursor: pointer;
+}
+.menu-text {
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  margin-right: 20px;
+}
+#menu-home-text {
+  width: 60%;
+  height: 40%;
+  border-radius: 41px;
+  background-color: rgb(208, 21, 59);
+  color: rgb(255, 255, 255);
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  margin-left: -38px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border: none;
+  cursor: pointer;
+}
+#menu-bar {
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+/* .main-banner-box {
+} */
+.second-banner-box {
+  max-width: 100%;
+  height: auto;
+  gap: 125px;
+  justify-content: center;
+}
+.banner-text-box {
+  max-width: 42%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin-right: 20px;
+}
+#banner-text {
+  font-size: 4rem;
+  font-family: Verdana, sans-serif;
+  font-weight: 800;
+  color: white;
+  margin-bottom: -8px;
+  line-height: 4rem;
+}
+#shape {
+  font-family: MonteCarlo, cursive;
+  font-size: 7rem;
+  font-weight: 100;
+}
+#banner-text-description {
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  color: gray;
+  line-height: 1.8rem;
+}
+
+#btn-join {
+  width: 190px;
+  height: 54px;
+  border-radius: 41px;
+  background-color: rgb(221, 10, 52);
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 10px 24px 10px 24px;
+  border: none;
+  margin-right: 12px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#btn-join2 {
+  display: none;
+}
+#btn-download {
+  width: 190px;
+  height: 54px;
+  background-color: rgb(19, 18, 18);
+  border-radius: 41px;
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 10px 24px 10px 24px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.banner-img-box {
+  max-width: 50%;
+  height: auto;
+  /* border: 1px solid blue; */
+}
+.banner-img-box img {
+  max-width: 100%;
+  height: 500px;
+  position: relative;
+  margin-left: 80px;
+}
+/* text Block styles */
+.text-block {
+  width: 180px;
+  height: 90px;
+  position: absolute;
+  bottom: 230px;
+  right: 380px;
+  backdrop-filter: blur(10px);
+  padding-left: 50px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.text-block2 {
+  width: 180px;
+  height: 90px;
+  position: absolute;
+  top: 210px;
+  right: 120px;
+  backdrop-filter: blur(20px);
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* background-color: rgb(43, 41, 41); */
+}
+.text-block2 h3 {
+  font-size: 1.9rem;
+  font-family: verdana;
+  line-height: 0.5px;
+  font-weight: 800;
+  color: white;
+}
+.text-block2 p {
+  color: rgba(129, 126, 126, 0.923);
+  font-family: verdana;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.5;
+}
+.text-circle {
+  line-height: 0.5px;
+  padding: 10px;
+}
+.text-circle h3 {
+  font-size: 1.5rem;
+  font-family: verdana;
+  color: white;
+  font-weight: 900;
+}
+.text-circle p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: verdana;
+  color: rgba(129, 126, 126, 0.923);
+}
+.circle {
+  height: 10px;
+  width: 10px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -40px;
+  margin-top: 32px;
+  padding: 10px;
+}
+.banner-cart2 {
+  color: white;
+  width: 196px;
+  height: 110px;
+  border-radius: 10px;
+}
+/* Change Habits Section Styles */
+.main {
+  max-width: 100%;
+  height: auto;
+}
+.habits-section {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 45px;
+}
+.habits-banner-box {
+  width: 40%;
+}
+.habits-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  line-height: 1rem;
+}
+.habits-description-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(129, 126, 126, 0.923);
+  line-height: 1.5rem;
+}
+.habits-img-box {
+  width: 70%;
+  height: auto;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.habits-img {
+  width: 100%;
+  height: auto;
+}
+.habit-img-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400px;
+  color: white;
+  margin: 10px auto;
+}
+.habits-img-description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(134, 131, 131, 0.936);
+}
+.habits-img img {
+  width: 100%;
+  height: 220px;
+  border-radius: 140px;
+  border: 4px solid rgba(31, 31, 31, 0.808);
+}
+/* Run & Extra Related Styles */
+.run-section {
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 95px;
+}
+.run-container {
+  max-width: 70%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  gap: 30px;
+  background-color: rgb(33, 32, 32);
+
+}
+.run-text-box {
+  width: 50%;
+  height: 70%;
+
+}
+.run-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+}
+.run-text-description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0 auto;
+  color: rgba(134, 131, 131, 0.936);
+  line-height: 1.5rem;
+}
+.btn-join {
+  width: 190px;
+  height: 44px;
+  border-radius: 41px;
+  background-color: rgb(221, 10, 52);
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 10px 24px 10px 24px;
+  border: none;
+  margin-top: 30px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.run-img-box {
+  width: 40%;
+  height: 70%;
+}
+.run-img-box img {
+  width: 100%;
+  height: 350px;
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  object-fit: none;
+  object-position: 67% 34%;
+}
+
+/* BMI Calculator Related Styles */
+.bmi-calculator-section {
+  margin-top: 45px;
+}
+.calculator-container {
+}
+.calculator-text-box {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.bmi-text-box {
+  width: 40%;
+}
+.bmi-head-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(247, 244, 244);
+  line-height: 0.5;
+}
+.bmi-text-description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(134, 131, 131, 0.936);
+  margin-bottom: 60px;
+  line-height: 2;
+}
+.calculator-input-box {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  text-align: start;
+  background-color: rgb(33, 32, 32);
+}
+.calculator-chart {
+  width: 40%;
+  height: auto;
+}
+.bmi-chart-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  margin-left: 70px;
+  color: white;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin-left: 70px;
+}
+td,
+th {
+  border: 1px solid rgb(68, 67, 67);
+  padding: 10px 20px;
+}
+td {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(134, 131, 131, 0.936);
+  text-align: start;
+}
+th {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(216, 211, 211);
+  text-align: start;
+}
+.calculate-form {
+  width: 40%;
+  height: auto;
+}
+.bmi-form-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: white;
+}
+.bmi-form-description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  color: rgba(134, 131, 131, 0.936);
+}
+.input-form {
+  flex-direction: column;
+}
+.input-form lable {
+  display: block;
+}
+label > input {
+  width: 42%;
+  height: auto;
+  padding: 12px 10px 12px 10px;
+  border-radius: 7px;
+  margin: 5px 5px;
+  background-color: rgba(54, 53, 53, 0.767);
+  font-family: Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+}
+label > select {
+  width: 45.5%;
+  height: auto;
+  padding: 12px 10px 12px 10px;
+  border-radius: 7px;
+  margin: 5px 5px;
+  background-color: rgba(54, 53, 53, 0.767);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  color: rgba(134, 131, 131, 0.936);
+  border-right: 10px solid transparent;
+}
+
+form > select {
+  width: 94%;
+  height: auto;
+  padding: 12px 10px 12px 10px;
+  border-radius: 7px;
+  margin: 5px 5px;
+  background-color: rgba(54, 53, 53, 0.767);
+  color: rgba(134, 131, 131, 0.936);
+  font-family: Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  border-right: 10px solid transparent;
+}
+.btn-bmi {
+  width: 190px;
+  height: 44px;
+  border-radius: 41px;
+  background-color: rgb(221, 10, 52);
+  color: rgb(255, 255, 255);
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 10px 24px 10px 24px;
+  border: none;
+  margin-top: 20px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Trainer related styles */
+.team-section {
+  margin-top: 40px;
+}
+.team-text-box {
+}
+.team-text {
+  font-family: Verdana, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  align-items: center;
+  line-height: 0.5;
+}
+.team-text-description {
+  font-family: Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 40px auto;
+  text-align: center;
+  align-items: center;
+  color: rgba(134, 131, 131, 0.936);
+  line-height: 2;
+}
+.team-img-box {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.team-img-box2 {
+  max-width: 72%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(33, 32, 32);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+.team-img {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.trainer-box1 {
+  max-width: 100%;
+  height: 250px;
+  position: relative;
+}
+.trainer {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  font-family: Verdana;
+  color: rgb(236, 233, 233);
+}
+.trainer-p {
+  position: absolute;
+  font-size: 0.8rem;
+  font-family: Verdana;
+  color: rgb(206, 201, 201);
+  text-align: start;
+  bottom: 0px;
+  margin-left: 1.5rem;
+}
+
+/* Footer Section Related Styles */
+.footer-section {
+  max-width: 100%;
+  height: auto;
+  background-color: rgb(33, 32, 32);
+}
+.footer-container-box {
+  justify-content: center;
+}
+.footer-container {
+  max-width: 80%;
+  height: auto;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer-box {
+  max-width: 40%;
+  height: auto;
+  align-items: center;
+  margin-left: 25px;
+  /* border: 1px solid blue; */
+}
+.footer-text {
+  text-align: start;
+  color: crimson;
+  font-family: Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+.footer-text-description {
+  font-family: Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-left: 20px;
+  color: rgba(134, 131, 131, 0.936);
+  line-height: 1.5;
+}
+.footer-box2 {
+  max-width: 30%;
+  height: auto;
+  margin-left: 40px;
+  /* border: 1px solid red; */
+}
+.footer-box3 {
+  max-width: 30%;
+  height: auto;
+  margin-left: 40px;
+  /* border: 1px solid rebeccapurple; */
+}
+.footer-text2 {
+  font-family: Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  margin-left: 108px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+.footer-ul {
+  text-decoration: none;
+  text-align: start;
+  margin-left: 70px;
+}
+.footer-ul > li {
+  list-style: none;
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(134, 131, 131, 0.936);
+  margin: 10px auto;
+}
+hr {
+  width: 75%;
+  border: 1px solid rgba(61, 59, 59, 0.874);
+}
+.copy-right {
+  height: 50px;
+  text-align: center;
+  font-family: Verdana;
+  color: rgba(134, 131, 131, 0.936);
+  margin-top: 25px;
+}
+
+/* Mobile Device View Style */
+@media screen and (max-width: 576px) {
+  /* Navbar and banner section Responsive */
+  .navbar,
+  .menu {
+    width: 95%;
+    height: 60px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  .text-link {
+    display: none;
+  }
+  #menu-bar {
+    display: block;
+  }
+  .second-banner-box {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .banner-text-box {
+    max-width: 100%;
+    height: auto;
+    margin: 0 1.3rem;
+  }
+  #banner-text {
+    font-size: 2.6rem;
+    max-width: 100%;
+    line-height: 2.5rem;
+  }
+  #shape {
+    font-size: 5.5rem;
+  }
+  #banner-text-description {
+    max-width: 80%;
+    margin-top: 25px;
+  }
+  .common-btn {
+    justify-content: center;
+    gap: 10px;
+
+  }
+  #btn-download {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  #btn-join {
+    display: none;
+  }
+  #btn-join2 {
+    display: block;
+    width: 190px;
+    height: 54px;
+    border-radius: 41px;
+    background-color: rgb(221, 10, 52);
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 10px 24px 10px 24px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .banner-img-box {
+    max-width: 100%;
+    height: auto;
+    margin: 0 1.3rem;
+  }
+  .banner-img-box img {
+    position: relative;
+  }
+  .second-banner-box {
+    gap: 40px;
+  }
+  .banner-img-box img {
+    position: relative;
+  }
+  .text-block {
+    position: absolute;
+    bottom: 50px;
+    right: 280px;
+  }
+  .text-block2 {
+    position: absolute;
+    top: 465px;
+    right: 100px;
+  }
+}
