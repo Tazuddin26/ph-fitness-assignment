@@ -116,9 +116,8 @@
   font-weight: 400;
   color: gray;
   line-height: 1.8rem;
- 
 }
-.common-btn{
+.common-btn {
   gap: 20px;
   justify-content: start;
 }
@@ -176,7 +175,7 @@
   width: 180px;
   height: 90px;
   position: absolute;
-  bottom: 120px;
+  bottom: 230px;
   right: 340px;
   backdrop-filter: blur(10px);
   padding-left: 50px;
@@ -221,7 +220,6 @@
   font-family: verdana;
   color: white;
   font-weight: 900;
- 
 }
 .text-circle p {
   font-size: 0.8rem;
@@ -239,7 +237,7 @@
   margin-top: 30px;
   padding: 13px;
 }
-  /* .banner-cart2 {
+/* .banner-cart2 {
     color: white;
     width: 196px;
     height: 110px;
@@ -696,33 +694,41 @@ hr {
 /* Mobile Device View Style */
 @media screen and (max-width: 576px) {
   /* Navbar and banner section Responsive */
-  .navbar,
+  .header,
+  .main-banner-box {
+    max-width: 100%;
+  }
   .menu {
-    width: 95%;
+    width: 500px;
     height: 60px;
-    padding: 5px;
-    margin: 0 auto;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 5px;
   }
   .text-link {
     display: none;
   }
   #menu-bar {
+    /* margin: 0 .8rem; */
     display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 5px;
   }
   .second-banner-box {
-    max-width: 100%;
-    height: auto;
     flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5px;
   }
   .banner-text-box {
     max-width: 100%;
     height: auto;
-    margin: 0 1.3rem;
+    
   }
   #banner-text {
     font-size: 2.6rem;
-    max-width: 100%;
+    max-width: 400px;
     line-height: 2.5rem;
   }
   #shape {
@@ -733,9 +739,7 @@ hr {
     margin-top: 25px;
   }
   .common-btn {
-    justify-content: center;
-    gap: 10px;
-
+    justify-content: flex-start;
   }
   #btn-download {
     margin-top: 20px;
@@ -781,16 +785,15 @@ hr {
     width: 170px;
     height: 80px;
     position: absolute;
-    bottom: -160px;
-    right: 220px;
+    bottom: -40px;
+    right: 280px;
   }
   .text-block2 {
     width: 165px;
     height: 75px;
     position: absolute;
     top: 550px;
-    right: 30px;
-
+    right: 90px;
   }
   .text-block2 h3 {
     font-size: 1.5rem;
@@ -800,7 +803,7 @@ hr {
     padding: 5px;
     margin: 0 auto;
   }
-  .text-circle h3{
+  .text-circle h3 {
     font-size: 1.2rem;
   }
   .circle {
@@ -813,23 +816,27 @@ hr {
     margin-top: 25px;
     padding: 10px;
   }
-
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
   /* navbar and banner small device responsive */
   .text-block {
-    width: 170px;
+    width: 160px;
     height: 80px;
     position: absolute;
-    bottom: 40px;
+    bottom: -40px;
     right: 200px;
   }
   .text-block2 {
-    width: 165px;
+    width: 160px;
     height: 75px;
     position: absolute;
-    top: 550px;
-    right: 20px;
-
+    top: 580px;
+    right: 25px;
+  }
+  #btn-download,
+  #btn-join2 {
+    max-width: 170px;
+    font-size: 0.7rem;
+    border-radius: 40px;
   }
 }
