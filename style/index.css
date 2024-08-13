@@ -310,7 +310,7 @@
   border: 4px solid rgba(31, 31, 31, 0.808);
 }
 /* Run & Extra Related Styles */
-/* .run-section {
+.run-section {
   max-width: 100%;
   height: 100%;
   align-items: center;
@@ -378,7 +378,7 @@
   border-radius: 20px;
   object-fit: none;
   object-position: 67% 34%;
-} */
+}
 
 /* BMI Calculator Related Styles */
 /* .bmi-calculator-section {
@@ -851,6 +851,44 @@ hr {
   .habits-img-description{
     font-size: .9rem;
   }
+  /* Run & Extra Related Styles */
+  .run-section{
+    max-width: 100%;
+  }
+  .run-container{
+    max-width: 400px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .run-text-box{
+    width: 330px;
+  }
+  .run-text{
+    max-width: 300px;
+    font-size: 2rem;
+  }
+  .run-text-description{
+    font-size: .9rem;
+  }
+  .btn-join{
+    width: 330px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+  .run-img-box{
+    width: 400px;
+    height: auto;
+ 
+  }
+  .run-img-box img{
+    max-width: 330px;
+    height: 200px;
+    /* margin-left: 35px; */
+    margin: 0 35px 30px 35px;
+    object-fit: cover;
+    /* object-position: 0% 10%; */
+  }
+
 }
 @media screen and (max-width: 400px) {
   /* navbar and banner small device responsive */
