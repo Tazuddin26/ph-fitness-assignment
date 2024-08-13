@@ -245,21 +245,22 @@
     border: 1px solid red;
   } */
 /* Change Habits Section Styles */
-/* .main {
+.main {
   max-width: 100%;
   height: auto;
 }
 .habits-section {
+  max-width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 45px;
 }
 .habits-banner-box {
-  width: 40%;
+  max-width: 40%;
 }
 .habits-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
@@ -267,7 +268,7 @@
   line-height: 1rem;
 }
 .habits-description-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
   text-align: center;
@@ -275,26 +276,27 @@
   line-height: 1.5rem;
 }
 .habits-img-box {
-  width: 70%;
-  height: auto;
-  gap: 2rem;
+  max-width: 100%;
+  height: 350px;
+  gap: 3rem;
   justify-content: center;
   text-align: center;
   margin-top: 30px;
 }
 .habits-img {
-  width: 100%;
-  height: auto;
+  width: 240px;
+  height: 290px;
 }
 .habit-img-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, sans-serif;
   font-size: 1.2rem;
   font-weight: 400px;
   color: white;
-  margin: 10px auto;
+  margin: 0 auto;
+  line-height: 2rem;
 }
 .habits-img-description {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
   text-align: center;
@@ -302,11 +304,11 @@
   color: rgba(134, 131, 131, 0.936);
 }
 .habits-img img {
-  width: 100%;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border-radius: 140px;
   border: 4px solid rgba(31, 31, 31, 0.808);
-} */
+}
 /* Run & Extra Related Styles */
 /* .run-section {
   max-width: 100%;
@@ -694,52 +696,57 @@ hr {
 /* Mobile Device View Style */
 @media screen and (max-width: 576px) {
   /* Navbar and banner section Responsive */
-  .header,
+  .header, .navbar
   .main-banner-box {
     max-width: 100%;
   }
   .menu {
-    width: 500px;
+    width: 400px;
     height: 60px;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 5px;
+    padding: 15px;
   }
   .text-link {
     display: none;
+    
   }
   #menu-bar {
-    /* margin: 0 .8rem; */
     display: block;
     text-align: center;
     font-size: 1.6rem;
-    padding: 5px;
+    /* padding: 5px; */
   }
   .second-banner-box {
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
     padding: 5px;
+
   }
   .banner-text-box {
     max-width: 100%;
     height: auto;
-    
+    justify-content: center;
+    margin: 0 10px 0 10px;
   }
   #banner-text {
     font-size: 2.6rem;
     max-width: 400px;
     line-height: 2.5rem;
+    margin: 20px auto;
   }
   #shape {
     font-size: 5.5rem;
   }
   #banner-text-description {
-    max-width: 80%;
-    margin-top: 25px;
+    max-width: 400px;
+    margin: 0 auto;
   }
   .common-btn {
-    justify-content: flex-start;
+    max-width: 400px;
+    justify-content: space-between;
+    margin: 0 auto;
   }
   #btn-download {
     margin-top: 20px;
@@ -816,6 +823,34 @@ hr {
     margin-top: 25px;
     padding: 10px;
   }
+  /* Habits section Responsive Style */
+
+  .habits-section {
+    max-width: 100%;
+  }
+  .habits-banner-box {
+    max-width: 365px;
+    height: 150px;
+  }
+  .habits-text {
+    font-size: 2rem;
+  }
+  .habits-description-text{
+    font-size: .9rem;
+  }
+  .habits-img-box{
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .habit-img-text{
+   margin-top: 5px;
+  }
+  .habits-img-description{
+    font-size: .9rem;
+  }
 }
 @media screen and (max-width: 400px) {
   /* navbar and banner small device responsive */
@@ -823,7 +858,7 @@ hr {
     width: 160px;
     height: 80px;
     position: absolute;
-    bottom: -40px;
+    bottom: -20px;
     right: 200px;
   }
   .text-block2 {
@@ -838,5 +873,9 @@ hr {
     max-width: 170px;
     font-size: 0.7rem;
     border-radius: 40px;
+  }
+  #banner-text-description {
+    max-width: 340px;
+    margin: 0 auto;
   }
 }
