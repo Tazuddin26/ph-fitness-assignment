@@ -536,7 +536,7 @@ form > select {
 }
 
 /* Trainer related styles */
-/* .team-section {
+.team-section {
   margin-top: 40px;
 }
 .team-text-box {
@@ -589,6 +589,11 @@ form > select {
   height: 250px;
   position: relative;
 }
+.trainer-box2 {
+  max-width: 100%;
+  height: 250px;
+  position: relative;
+}
 .trainer {
   position: absolute;
   bottom: 20px;
@@ -596,6 +601,17 @@ form > select {
   font-size: 0.9rem;
   font-family: Verdana;
   color: rgb(236, 233, 233);
+}
+.trainer-full-name {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  font-family: Verdana;
+  color: rgb(236, 233, 233);
+}
+.trainer-small-name {
+  display: none;
 }
 .trainer-p {
   position: absolute;
@@ -605,10 +621,10 @@ form > select {
   text-align: start;
   bottom: 0px;
   margin-left: 1.5rem;
-} */
+}
 
 /* Footer Section Related Styles */
-/* .footer-section {
+.footer-section {
   max-width: 100%;
   height: auto;
   background-color: rgb(33, 32, 32);
@@ -689,7 +705,7 @@ hr {
   font-family: Verdana;
   color: rgba(134, 131, 131, 0.936);
   margin-top: 25px;
-} */
+}
 
 /* Mobile Device View Style */
 @media screen and (max-width: 576px) {
@@ -880,17 +896,12 @@ hr {
     height: 200px;
     margin: 0 35px 30px 35px;
     object-fit: cover;
-    /* object-position: 0% 10%; */
   }
   /* BMI Calculator Related Styles */
   .bmi-calculator-section {
     max-width: 100%;
-    border: 1px solid white;
   }
-  /* .calculator-container{
-    max-width: 100%;  
-    border: 1px solid rgb(184, 30, 30);
-  } */
+
   .calculator-text-box {
     max-width: 100%;
     justify-content: center;
@@ -914,7 +925,6 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(199, 215, 15);
   }
   .calculator-chart {
     width: 400px;
@@ -960,24 +970,69 @@ hr {
     font-size: 1rem;
     margin: 0 0 0 10px;
   }
-  
-  label> select{
+
+  label > select {
     width: 174px;
     height: 60px;
     font-size: 1rem;
     margin: 5px;
     margin: 0 0 0 10px;
   }
-  form> select{
+  form > select {
     width: 364px;
     height: 60px;
     font-size: 1rem;
     margin: 0 0 0 10px;
   }
-  .btn-bmi{
+  .btn-bmi {
     width: 220px;
     height: 50px;
     margin: 20px 10px 10px 10px;
+  }
+  /* Trainer Responsive Styles */
+  .team-text-box {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .team-text {
+    width: 330px;
+    margin: 40px auto 18px;
+    font-size: 2rem;
+  }
+  .team-text-description {
+    width: 350px;
+    margin-top: 0;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .team-img-box {
+    max-width: 100%;
+  }
+  .team-img-box2 {
+    width: 400px;
+    grid-template-columns: none;
+  }
+  .team-img {
+    max-width: 365px;
+    height: 250px;
+  }
+  .trainer-box2 {
+    display: none;
+  }
+  .trainer {
+    font-size: 1.2rem;
+  }
+  .trainer-full-name {
+    display: none;
+  }
+  .trainer-small-name {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    font-family: Verdana;
+    color: rgb(236, 233, 233);
   }
 }
 @media screen and (max-width: 400px) {
@@ -1030,25 +1085,24 @@ hr {
   th {
     font-size: 1rem;
   }
-  .bmi-form-text{
+  .bmi-form-text {
     margin: 30px 30px 20px 30px;
   }
-  .bmi-form-description{
+  .bmi-form-description {
     margin: 30px 30px 20px 30px;
   }
-  .input-form{
+  .input-form {
     width: 380px;
     margin: 20px 10px 10px 20px;
   }
   label > input {
     width: 140px;
-    /* margin: 0 .2rem 0 .7rem; */
   }
-  
-  label> select{
-width: 160px;
+  label > select {
+    width: 160px;
   }
-  form> select{
-width: 335px;
+  form > select {
+    width: 335px;
   }
+
 }
