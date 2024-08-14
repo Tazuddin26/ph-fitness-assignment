@@ -804,15 +804,15 @@ hr {
     width: 170px;
     height: 80px;
     position: absolute;
-    bottom: -40px;
-    right: 280px;
+    bottom: -400px;
+    right: 220px;
   }
   .text-block2 {
     width: 165px;
     height: 75px;
     position: absolute;
     top: 550px;
-    right: 90px;
+    right: 40px;
   }
   .text-block2 h3 {
     font-size: 1.5rem;
@@ -966,21 +966,21 @@ hr {
   }
   label > input {
     width: 155px;
-    height: 34px;
+    height: 30px;
     font-size: 1rem;
     margin: 0 0 0 10px;
   }
 
   label > select {
-    width: 174px;
-    height: 60px;
+    width: 175px;
+    height: 54px;
     font-size: 1rem;
     margin: 5px;
     margin: 0 0 0 10px;
   }
   form > select {
-    width: 364px;
-    height: 60px;
+    width: 365px;
+    height: 54px;
     font-size: 1rem;
     margin: 0 0 0 10px;
   }
@@ -1034,22 +1034,83 @@ hr {
     font-family: Verdana;
     color: rgb(236, 233, 233);
   }
+  /* Fitness Footer Responsive Style */
+  .footer-container-box {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .footer-container {
+    max-width: 400px;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+  }
+  .footer-box {
+    max-width: 350px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .footer-text {
+    width: 350px;
+    text-align: start;
+    margin-left: 0px;
+  }
+  .footer-text-description {
+    /* margin-top: 30px; */
+    margin-left: 0px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .footer-box2 {
+    max-width: 350px;
+    margin: 30px auto 0;
+  }
+  .footer-text2 {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  .footer-box3 {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .footer-ul {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .footer-ul > li {
+    margin: 20px 0px;
+  }
+  hr {
+    margin-top: 30px;
+    width: 350px;
+    border: 1px solid rgba(61, 59, 59, 0.874);
+  }
+  .copy-right {
+    width: 300px;
+    text-align: start;
+    margin-left: 20px;
+    padding: 10px;
+  }
 }
-@media screen and (max-width: 400px) {
-  /* navbar and banner small device responsive */
+/* @media screen and (max-width: 400px) {
+ 
+  .banner-img-box img {
+    position: relative;
+  }
   .text-block {
     width: 160px;
     height: 80px;
     position: absolute;
-    bottom: -20px;
-    right: 200px;
+    bottom: 20px;
+    right: 160px;
   }
   .text-block2 {
     width: 160px;
     height: 75px;
     position: absolute;
     top: 580px;
-    right: 25px;
+    right: 35px;
   }
   #btn-download,
   #btn-join2 {
@@ -1061,7 +1122,7 @@ hr {
     max-width: 340px;
     margin: 0 auto;
   }
-  /* BMI Section small device */
+
   .bmi-text-box h1 {
     margin: 20px 10px 20px 10px;
   }
@@ -1104,5 +1165,28 @@ hr {
   form > select {
     width: 335px;
   }
-
-}
+  .footer-section{
+    max-width: 100%;
+  }
+  .footer-container {
+    max-width: 350px;
+  }
+  .footer-box2 {
+    max-width: 320px;
+  }
+  .footer-box3 {
+    max-width: 320px;
+  }
+  .footer-text2 {
+    max-width: 320px;
+  }
+  hr {
+  width: 310px;
+    border: 1px solid rgba(61, 59, 59, 0.874);
+  }
+  .copy-right {
+    max-width: 350px;
+    margin-left: 0px;
+    padding: 10px;
+  }
+} */
