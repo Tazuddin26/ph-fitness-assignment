@@ -1009,11 +1009,11 @@ hr {
     max-width: 100%;
   }
   .team-img-box2 {
-    width: 400px;
+    max-width: 400px;
     grid-template-columns: none;
   }
   .team-img {
-    max-width: 365px;
+    width: 340px;
     height: 250px;
   }
   .trainer-box2 {
@@ -1050,12 +1050,12 @@ hr {
     margin: 0 auto;
   }
   .footer-text {
+    font-size: 3.2rem;
     width: 350px;
     text-align: start;
     margin-left: 0px;
   }
   .footer-text-description {
-    /* margin-top: 30px; */
     margin-left: 0px;
     font-size: 0.9rem;
     line-height: 1.5rem;
@@ -1074,7 +1074,7 @@ hr {
     margin: 0 auto;
   }
   .footer-ul {
-    margin: 0px;
+    margin: 0 auto;
     padding: 0px;
     margin-top: 30px;
   }
@@ -1083,7 +1083,7 @@ hr {
   }
   hr {
     margin-top: 30px;
-    width: 350px;
+    width: 340px;
     border: 1px solid rgba(61, 59, 59, 0.874);
   }
   .copy-right {
